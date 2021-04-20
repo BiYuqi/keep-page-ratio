@@ -13,7 +13,7 @@ interface Options {
 }
 
 export default defineComponent({
-  name: "StableRatioContainer",
+  name: "PageScaleContainer",
   props: {
     options: Object as PropType<Options>,
     default: {}
@@ -88,9 +88,7 @@ export default defineComponent({
     })
 
     return {
-      containerRef,
-      width,
-      height
+      containerRef
     }
   }
 })
