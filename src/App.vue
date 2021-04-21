@@ -1,5 +1,5 @@
 <template>
-  <PageScaleContainer :options="{ width: 1920, height: 1080 }">
+  <PageScaleContainer class="page-wrapper" :options="{ width: 1920, height: 1080 }">
     <div class="header">大数据可视化模板(支持等比缩放)</div>
     <div class="container">
       <div class="flex-row row-top">
@@ -53,7 +53,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.page-ratio-container {
+.page-wrapper {
   background: url("./assets/bg01.png") 0 0 / 100% 100% no-repeat;
 }
 .header {
